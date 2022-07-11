@@ -27,7 +27,6 @@ struct PublisProfile: View {
                     .frame(width: 126, height: 126, alignment: .center)
                     .clipped()
             }
-            Spacer()
             }
     }
 }

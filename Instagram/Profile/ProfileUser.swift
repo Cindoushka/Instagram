@@ -26,10 +26,13 @@ struct ProfileUser: View {
                 
                 DescProfile()
                 
+                
                 ModificationProfile()
                 
+                StoriesProfile()
+                
                 ButtonsProfile()
-                                
+                
             }
         }
     }

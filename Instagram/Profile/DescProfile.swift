@@ -15,10 +15,20 @@ struct DescProfile: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text(users[0].username)
                     .fontWeight(.bold)
-                    .font(.system(size:15))
+                    .font(.system(size:14))
 
                 Text(users[0].userbio)
                     .font(.system(size:14))
+                
+                Button(action:{
+                    
+                }, label: {
+                    Text("Voir la traduction")
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                        .font(.system(size: 14))
+                    
+                })
                 
             }
             Spacer()

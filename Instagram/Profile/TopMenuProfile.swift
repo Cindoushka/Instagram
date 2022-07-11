@@ -39,7 +39,7 @@ struct TopMenuProfile: View {
                 .frame(height: 32)
             
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

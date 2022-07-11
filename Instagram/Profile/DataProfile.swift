@@ -15,33 +15,33 @@ struct DataProfile: View {
             VStack {
                 Text("\(users[0].publis.count)")
                     .fontWeight(.semibold)
-                    .font(.system(size:18))
+                    .font(.system(size:17))
                 
                 Text("Publications")
                     .fontWeight(.light)
-                    .font(.system(size:12))
+                    .font(.system(size:12.5))
 
             }
             
             VStack {
                 Text("\(users[0].followers)")
                     .fontWeight(.semibold)
-                    .font(.system(size:18))
+                    .font(.system(size:17))
 
                 Text("Abonnés")
                     .fontWeight(.light)
-                    .font(.system(size:12))
+                    .font(.system(size:12.5))
 
             }
             
             VStack {
                 Text("\(users[0].follows)")
                     .fontWeight(.semibold)
-                    .font(.system(size:18))
+                    .font(.system(size:17))
 
                 Text("Abonnements")
                     .fontWeight(.light)
-                    .font(.system(size:12))
+                    .font(.system(size:12.5))
 
             }
             

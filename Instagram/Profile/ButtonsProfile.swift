@@ -37,7 +37,7 @@ struct ButtonsProfile: View {
                     
                     TabButton(title: "play", currentTab: $currentTab, animation: animation, selectedTab: $selectedTab, buttonName: .play)
                     
-                    TabButton(title: "add", currentTab: $currentTab, animation: animation, selectedTab: $selectedTab, buttonName: .identify)
+                    TabButton(title: "follower", currentTab: $currentTab, animation: animation, selectedTab: $selectedTab, buttonName: .identify)
                 }
                 .padding(.horizontal, 30)
             
@@ -123,7 +123,7 @@ struct TabButton: View {
                     
                     Capsule()
                         .fill(Color.black)
-                        .frame(width: 90, height: 1.2)
+                        .frame(width: 92, height: 1.2)
                         .matchedGeometryEffect(id: "TAB", in: animation)
                     
                     

@@ -33,13 +33,13 @@ struct ModificationProfile: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 15)
-                    .padding(8)
+                    .padding(9)
                     .background(Color("lightgray"))
                     .cornerRadius(8)
                 
             })
         }
-        .padding(.vertical)
+        .padding(.vertical, 4)
     }
 }
 

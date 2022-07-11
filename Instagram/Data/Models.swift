@@ -20,4 +20,11 @@ struct Users: Identifiable {
     var followers: Int
     var follows: Int
     var publis: [String]
+    var stories: [Stories]
+}
+
+struct Stories: Identifiable {
+    var id = UUID()
+    var picture: String
+    var name: String
 }
