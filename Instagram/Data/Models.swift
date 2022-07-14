@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Users: Identifiable {
+struct User: Identifiable {
     var id = UUID()
     var username: String
     var userbio: String
@@ -19,32 +19,32 @@ struct Users: Identifiable {
     var isCurrentUser: Bool
     var followers: Int
     var follows: Int
-    var stories: [Stories]
+    var stories: [Story]
 }
 
-struct Stories: Identifiable {
+struct Story: Identifiable {
     var id = UUID()
     var picture: String
     var name: String
 }
 
-struct Publications: Identifiable {
+struct Publication: Identifiable {
     var id = UUID()
     var pic: String
     var desc: String
-    var publishedBy: Users
-    var likedBy: [Users]
-    var commentaires: [Commentaires]
+    var publishedBy: User
+    var likedBy: [User]
+    var commentaires: [Commentaire]
     var date: String
 }
 
-struct Commentaires: Identifiable {
+struct Commentaire: Identifiable {
     var id = UUID()
-    var userCom: Users
+    var userCom: User
     var com: String
 }
 
-func filteredPublis (user: Users) -> [Publications] {
+func filteredPublis (user: User) -> [Publication] {
     let filteredPubliByUser = publications.filter { publis in
         publis.publishedBy.id == user.id
     }

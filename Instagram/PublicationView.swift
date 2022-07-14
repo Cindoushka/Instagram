@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PublicationView: View {
     
-    var publi: Publications
+    var publi: Publication
     
     var width: CGFloat = UIScreen.main.bounds.width
     
@@ -106,16 +106,22 @@ struct PublicationView: View {
             }
             .padding(.horizontal)
             
-            HStack(alignment: .firstTextBaseline) {
+            HStack{
                 
-                Text(publi.publishedBy.userarobas)
-                    .fontWeight(.semibold)
-                
+            Text(publi.publishedBy.userarobas)
+                .fontWeight(.semibold)
+                .font(.system(size:16))
+            +
+            Text("  ")
+            +
                 Text(publi.desc)
+                .font(.system(size:16))
                 
+
                 Spacer()
             }
-            .padding(.horizontal, 4)
+            .padding(.horizontal, 8)
+            
             
             
             HStack {
@@ -130,7 +136,7 @@ struct PublicationView: View {
             Spacer()
                 .navigationBarHidden(true)
         }
-        
+
 
     }
 }
