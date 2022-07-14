@@ -13,7 +13,7 @@ struct DataProfile: View {
         HStack(spacing: 12) {
             
             VStack {
-                Text("\(users[0].publis.count)")
+                Text("\(filteredPublis(user: users[0]).count)")
                     .fontWeight(.semibold)
                     .font(.system(size:17))
                 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileUser: View {
     var body: some View {
-        
+        NavigationView{
         VStack{
             TopMenuProfile()
             
@@ -34,6 +34,8 @@ struct ProfileUser: View {
                 ButtonsProfile()
                 
             }
+        }
+        .navigationBarHidden(true)
         }
     }
 }

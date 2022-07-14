@@ -19,13 +19,16 @@ struct PublisProfile: View {
         
         LazyVGrid(columns: columns, alignment: .center, spacing: 1) {
             
-            ForEach(users[0].publis, id: \.self) { pictures in
-                
-                Image(pictures)
+            ForEach(publications) { pictures in
+                NavigationLink {
+                    PublicationView(publi: pictures)
+                } label: {
+                Image(pictures.pic)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 126, height: 126, alignment: .center)
                     .clipped()
+            }
             }
             }
     }
