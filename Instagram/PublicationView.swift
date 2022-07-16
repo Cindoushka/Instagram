@@ -143,6 +143,6 @@ struct PublicationView: View {
 
 struct PublicationView_Previews: PreviewProvider {
     static var previews: some View {
-        PublicationView(publi: publications[0])
+        PublicationView(publi: publications[9])
     }
 }
